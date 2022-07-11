@@ -1,2 +1,3 @@
-# ista-python-curso2022
-Proyecto final, curso Python
+# NOMBRE: JUAN CARLOS INGA REINOSO
+# CURSO: M5B
+# INICIO: EL 11/07/2022 A LAS 16:37PM
