@@ -11,7 +11,7 @@ def index():
     return 'Listado de Estudiantes'
 
 
-@app.route('/estudiantes', methods=['GET'])
+@app.route('/estudiantes', methods=['GET']) #Obtener datos y estudiantes por un get
 def lista_estudiantes():
     with open('datos\estudiante.csv') as file:
         reader = csv.reader(file)
@@ -28,7 +28,7 @@ def lista_estudiantes():
     return json . dumps(sorted(lista, key=lambda x: x['cedula']))
 
 
-@app.route('/registrar_asistencia', methods=['POST'])
+@app.route('/registrar_asistencia', methods=['POST']) #Crear datos y estudiantes por medio de un post mapping
 def registrar_asistencia():
     with open('datos\asistencia.csv', 'a', newline='') as listado:
         writer = csv.writer(listado, delimiter=',', quotechar='',
